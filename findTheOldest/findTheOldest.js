@@ -1,8 +1,22 @@
 let findTheOldest = function(arr) {
     function getAge (person){
-        return 2020 - person.yearOfBirth;
+        if (person.yearOfDeath == undefined){
+            return (new Date()).getFullYear() - person.yearOfBirth;
+        }else{
+            return person.yearOfDeath - person.yearOfBirth;
+        };
     };
     
+    //index of oldest in the array
+    let index = 0;
+
+    for (let i = 1; i < arr.length; i ++){
+        if (getAge(arr[i]) > getAge(arr[index])){
+            index = i;
+        };    
+    };
+    
+    return arr[index];
 
 }
 
