@@ -9,6 +9,11 @@ arr = str.split("");
     //find index in upper or lower; if neither just add
     //for index i, shift by i+n mod 26
 function cs (char){
+
+    if (n <0){
+        n = 26 + (n%26);
+    };
+
     if (lower.indexOf(char)>=0){
         return lower[(lower.indexOf(char) + n)%26];
     }else if (upper.indexOf(char)>=0){
@@ -18,7 +23,7 @@ function cs (char){
     };
 };
 
-res = arr.map(cs).join();
+return arr.map(cs).join("");
 
 
 }
