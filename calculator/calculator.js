@@ -7,6 +7,8 @@ function subtract (n, m) {
 	
 }
 
+//note that sum and multiply iterate backwards over the array due to pop()
+//it's fine b/c addition and multiplication are transitive
 function sum (arr) {
 	if (arr.length == 0){
         return 0;
