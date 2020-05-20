@@ -7,17 +7,28 @@ let findTheOldest = function(arr) {
         };
     };
     
-    //index of oldest in the array
-    let index = 0;
+//      Using For Loop:
+//    let index = 0;
 
-    for (let i = 1; i < arr.length; i ++){
-        if (getAge(arr[i]) > getAge(arr[index])){
-            index = i;
-        };    
-    };
+//    for (let i = 1; i < arr.length; i ++){
+//        if (getAge(arr[i]) > getAge(arr[index])){
+//            index = i;
+//        };    
+//    };
     
-    return arr[index];
+//    return arr[index];
 
-}
+    function compare (currentOldest, thisPerson){
+        if (getAge(thisPerson) > getAge(currentOldest)){
+            return thisPerson;
+        }else{
+            return currentOldest;
+        };
+    };
+
+    return arr.reduce(compare, arr[0]);
+
+
+};
 
 module.exports = findTheOldest
