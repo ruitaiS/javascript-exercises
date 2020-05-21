@@ -13,8 +13,12 @@ const snakeCase = function(str) {
     //technically this regex only works for two word camelcase
     if (!(/^[a-z]+[A-Z][a-z]+/.test(str))){
         str = str.toLowerCase();
+    }else{
+        //else insert underscore before the capital
+        
+
     };
-    //else insert underscore before the capital
+    
 
     return str;
 

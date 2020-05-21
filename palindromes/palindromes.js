@@ -1,8 +1,7 @@
 const palindromes = function(str) {
     
-    //copied from Stack Overflow tbh...
-    //not super familiar with regex yet
-    str = str.replace(/(~|`|!|@|#|$|%|^|&|\*|\(|\)|{|}|\[|\]|;|:|\"|'|<|,|\.|>|\?|\/|\\|\||-|_|\+|=| )/g,"").toLowerCase();
+    //convert to lower and strip all non-alphanumeric chars
+    str = str.toLowerCase().replace(/[^a-z]/g,"");
 
     arr = str.split("");
     res = "";
