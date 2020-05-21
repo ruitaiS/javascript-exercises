@@ -1,12 +1,12 @@
 const sumAll = function(a, b) {
 
-function recSum(x, y){
-    if (x==y){
-        return x;
-    }else{
-        return x + recSum(x+1, y);
+    function recSum(x, y){
+        if (x==y){
+            return x;
+        }else{
+            return x + recSum(x+1, y);
+        };
     };
-};
 
 
     if (!((typeof a == "number")&&(typeof b == "number"))||((a<0)||(b<0))){

@@ -18,6 +18,8 @@ let findTheOldest = function(arr) {
     
 //    return arr[index];
 
+
+//  Using array reduce:
     function compare (currentOldest, thisPerson){
         if (getAge(thisPerson) > getAge(currentOldest)){
             return thisPerson;
