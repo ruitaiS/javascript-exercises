@@ -1,3 +1,25 @@
+[Original Readme file is included below the break]
+
+More coding exercises from the Odin project. I did them in the order below (most of them were pretty straightforward but the ones I found difficult or interesting I've put asterisks & notes next to).
+
+helloWorld
+repeatString
+reverseString
+removeFromArray
+sumAll
+leapYears
+tempConversion
+*calculator -> I liked this one because I got to use recursion a lot :)
+*palindromes -> This one was tough! I couldn't figure out how to properly parse the input strings for alphanumeric characters until I did the later exercises with regex.
+caesar
+*fibonacci -> Got to use recursion on this one too! 
+getTheTitles
+findTheOldest
+
+*snakeCase -> Mostly straightforward, but the camelcase test was a real thinker; ended up writing a function to split it along the "hump" (eg. the transition from lower to upper case) to pass to replace(). Very useful going into the pig_latin exercise, as it required similar finagling with replace().
+*pig_latin -> Really proud of this one. Got very intimately familiar with the reduce() and replace() functions to write some nice one-liners.
+
+-----------------------------------------------------------------------------------------------------------------------------
 These are a series of javascript exercises intended to be used alongside the curriculum at 'The Odin Project'  They start very simply, but get more involved as you progress through them.
 
 There will eventually be a suggested order of completion, but at this time since we are still in the process of creating more exercises the order is subject to change and has not yet been specified... In general however there are a couple which make a good "starting point" feel free to at least start with these:
