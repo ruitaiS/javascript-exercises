@@ -5,19 +5,32 @@ More coding exercises from the Odin project. I did them in the order below (most
 helloWorld
 
 repeatString
+
 reverseString
+
 removeFromArray
+
 sumAll
+
 leapYears
+
 tempConversion
+
 *calculator -> I liked this one because I got to use recursion a lot :)
+
 *palindromes -> This one was tough! I couldn't figure out how to properly parse the input strings for alphanumeric characters until I did the later exercises with regex.
+
 caesar
+
 *fibonacci -> Got to use recursion on this one too! 
+
 getTheTitles
+
 findTheOldest
 
+
 *snakeCase -> Mostly straightforward, but the camelcase test was a real thinker; ended up writing a function to split it along the "hump" (eg. the transition from lower to upper case) to pass to replace(). Very useful going into the pig_latin exercise, as it required similar finagling with replace().
+
 *pig_latin -> Really proud of this one. Got very intimately familiar with the reduce() and replace() functions to write some nice one-liners.
 
 -----------------------------------------------------------------------------------------------------------------------------
