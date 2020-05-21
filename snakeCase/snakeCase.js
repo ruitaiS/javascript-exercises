@@ -4,7 +4,7 @@ const snakeCase = function(str) {
     str = str.replace(/( |-|(\.\.)+)/g, "_");
 
     //remove underscore at end of string
-    str = str.replace(/$_/g, "");
+    str = str.replace(/_$/, "");
 
     //remove (most) punctuation (not spaces, dashes, or underscores)
     str = str.replace(/(~|`|!|@|#|$|%|^|&|\*|\(|\)|{|}|\[|\]|;|:|\"|'|<|,|\.|>|\?|\/|\\|\||\+|=)/g,"");
