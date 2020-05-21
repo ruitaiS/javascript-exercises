@@ -1,3 +1,8 @@
+//hump is two chars of pattern [a-z][A-Z]
+const decamelize = function(hump){
+    return hump.slice(0,1) + "_" + hump.slice(1).toLowerCase();
+}
+
 const snakeCase = function(str) {
 
     //switch spaces, dashes with underscore
@@ -15,7 +20,7 @@ const snakeCase = function(str) {
         str = str.toLowerCase();
     }else{
         //else insert underscore before the capital
-        
+        str = str.replace(/[a-z][A-Z]/g, decamelize);
 
     };
     
