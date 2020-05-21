@@ -3,6 +3,7 @@
 More coding exercises from the Odin project. I did them in the order below (most of them were pretty straightforward but the ones I found difficult or interesting I've put asterisks & notes next to).
 
 helloWorld
+
 repeatString
 reverseString
 removeFromArray
