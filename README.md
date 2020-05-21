@@ -31,7 +31,7 @@ findTheOldest
 
 *snakeCase -> Mostly straightforward, but the camelcase test was a real thinker; ended up writing a function to split it along the "hump" (eg. the transition from lower to upper case) to pass to replace(). Very useful going into the pig_latin exercise, as it required similar finagling with replace().
 
-*pig_latin -> Really proud of this one. Got very intimately familiar with the reduce() and replace() functions to write some nice one-liners.
+*pig_latin -> Really proud of this one! Got very intimately familiar with the reduce() and replace() functions to write some nice one-liners.
 
 -----------------------------------------------------------------------------------------------------------------------------
 These are a series of javascript exercises intended to be used alongside the curriculum at 'The Odin Project'  They start very simply, but get more involved as you progress through them.
